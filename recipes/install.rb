@@ -12,5 +12,5 @@ execute 'add nodejs repo' do
 end
 
 execute 'install nodejs' do
-  command 'sudo apt-get install -y nodejs'
+  command 'sudo apt-get install -y --force-yes nodejs'
 end
