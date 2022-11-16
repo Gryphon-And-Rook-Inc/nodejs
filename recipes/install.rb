@@ -8,7 +8,11 @@ execute 'update apt-get' do
 end
 
 execute 'add nodejs repo' do
-  command 'curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -'
+  command 'curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh'
+end
+
+execute 'install nodejs' do
+  command 'sudo bash nodesource_setup.sh'
 end
 
 execute 'install nodejs' do
