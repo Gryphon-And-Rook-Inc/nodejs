@@ -1,3 +1,3 @@
 Node JS Cookbook
 ====================
-Installs Node.js 11X.
+Installs Node.js 12X.
